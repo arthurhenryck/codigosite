@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sedan+SC&display=swap" rel="stylesheet">
+    <style>
+        #formulario{
+            width: 300px;
+            height: 500px;
+            border: 3px solid black;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            border-radius: 20px;
+        }
+        .input{
+            background-color: lightgray;
+            border-radius: 5px;
+            font-family: "Bebas Neue";
+            border: none;
+        }
+        .input:focus{
+            outline: none;
+            color: gray;
+
+        }
+    </style>
+</head>
+<body>
+<center>
+<form action="" method="" id="formulario">
+    <label for="name"> Nome</label>
+    <input class="input" id="name" name="" type="text"
+    placeholder="Escreva seu nome" />
+    <br>
+    <label for="email"> Email</label>
+    <input class="input" id="email" name="" type="email"
+    placeholder="Escreva seu email" />
+    <br>
+    <label for="senha"> Coloque uma senha</label>
+    <input class="input" id="senha" name="" type="password"
+    placeholder="crie uma senha" />
+    <br>
+    <label for="Confirmação"> Confirme sua senha</label>
+    <input class="input" id="Confirmação" name="" type="password"
+    placeholder="Confirme sua senha" />
+    <br>
+    <label for="nacimento"> Nacimento</label>
+    <input class="input" id="nacimento" name="" type="date"
+    placeholder="Nacimento" />
+    <br>
+    <label for="cor"> Escolha uma cor</label>
+    <input class="input" id="cor" name="" type="color"
+    placeholder="escolha uma cor" />
+    <br>
+    <label for="numero"> Numero de Telefone</label>
+    <input class="input" id="numero" name="" type="tel"
+    placeholder="Numero de Telefone" />
+    <br>
+    <label for="mensagem"> Escreva uma mensagem</label>
+    <textarea class="input" id="mensagem" placeholder="coloque uma mensagem" ></textarea>
+</form>
+</center>
+</body>
+</html>
