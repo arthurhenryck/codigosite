@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        body{
+            display: flex;
+          justify-content: center;
+   
+            align-items: center;
+            height: 100vh;
+        }
         #formulario{
                 width: 300px;
                 height: 500px;
@@ -15,44 +22,48 @@
                 align-items: center;
                 border-radius: 20px;
         }
+        #name{
+            flex-direction: column;
+            justify-self: center;
+            align-items: center;
+            border: none;
+            border-bottom: solid rgb(74, 176, 74) 2px;
+
+        }
+        .borda:focus{
+            outline: none;
+            
+        }
+
     </style>
 </head>
 <body>
-    <center>
-<form action="" method="" id="formulario">
-    <label for="name">Nome</label>
-    <input id="name" name="" type="text"
-    placeholder="Escreva seu nome" />
+
+<form action="" method="" id="formulario-off">
+    <input class="borda" id="name" name="" type="text"
+    placeholder="Nome" />
     <br>
-    <label for="email">Email</label>
-    <input id="email" name="" type="email"
-    placeholder="Escreva seu email" />
     <br>
-    <label for="senha">Coloque uma senha</label>
-    <input id="senha" name="" type="password"
-    placeholder="crie uma senha" />
+    <input class="borda" id="name" name="" type="email"
+    placeholder="Email" />
     <br>
-    <label for="Confirmação">Confirme sua senha</label>
-    <input id="Confirmação" name="" type="password"
-    placeholder="Confirme sua senha" />
     <br>
-    <label for="nacimento">Nacimento</label>
-    <input id="nacimento" name="" type="date"
-    placeholder="Nacimento" />
+    <input class="borda" id="name" name="" type="password"
+    placeholder="Senha" />
     <br>
-    <label for="cor">Escolha uma cor</label>
-    <input id="cor" name="" type="color"
-    placeholder="escolha uma cor" />
     <br>
-    <label for="numero">Numero de Telefone</label>
-    <input id="numero" name="" type="tel"
-    placeholder="Numero de Telefone" />
+    <input class="borda" id="name" name="" type="password"
+    placeholder="Confirmar Senha" />
     <br>
-    <label for="mensagem">Escreva uma mensagem</label>
-    <textarea id="mensagem" placeholder="coloque uma mensagem" ></textarea>
+    <br>
+    <input class="borda" id="name" name="" type="tel"
+    placeholder="Telefone" />
+    <br>
 </form>
 <br>
-<a href="./chalenge.html"> DESAFIO </a>
-    </center>
+<div style="display: flex;">
+    <p> Informação 1 </p>
+    <p> Informação 2 </p>
+</div>
 </body>
 </html>

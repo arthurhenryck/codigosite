@@ -4,12 +4,17 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>~Pagina internet</title>    
+    <title>Pagina internet</title>    
         <style>
+            body{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
             #TopBox{
                 width: 700px;
                 height: 700px;
-                border: 15px solid black;
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
@@ -44,6 +49,12 @@
                 justify-content: center;
                 border-radius: 10px;
             }
+            #container{
+                display: flex;
+            }
+            #elemento{
+                margin-right: 20px;
+            }
         </style>
 </head>
 <body>
@@ -53,9 +64,11 @@
     <div>
         <h1> Arthur Henryck </h1>
         <p> Aluno, 1ºT.I., Anime </p>
-        <div class="Botao1"><p>Botao 1</p></div>
+    </div>
+    <div id="container">
+        <div class="Botao1" id="elemento"><p>Botao 1</p></div>
         <br>
-        <div class="Botao2"><p>Botao 2</p></div>
+        <div class="Botao2" id="elemento"><p>Botao 2</p></div>
     </div>
 </div>
 
