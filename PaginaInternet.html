@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pagina internet</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <style>body {
         display: flex;
         flex-direction: column;
@@ -44,7 +47,7 @@
     .Botao {
         width: 250px;
         height: 80px;
-        background-color: white;
+        background-color: rgb(233, 229, 229);
         display: flex;
         align-items: center;
         justify-content: center;
@@ -62,12 +65,7 @@
         display: flex;
     }
     
-    #insta {
-        width: 70px;
-        height: 70px;
-        border-radius: 50%;
-    }
-    
+ 
     .line_img {
         margin-right: 40px;
         width: 400px;
@@ -79,45 +77,87 @@
     #line_img1{
         width: 300px;
         height: 300px;
-        border-radius: 50px;
-        background-color: aqua;
+        border-radius: 15px;
+        background-color: rgb(0, 255, 64);
     }    
     #line_img2{
         width: 300px;
         height: 300px;
-        border-radius: 50px;
-        background-color: aqua;
+        border-radius: 15px;
     }
     #line_img3{
-        width: 300px;
+        width: 200px;
         height: 300px;
-        border-radius: 50px;
-        background-color: aqua;
+        border-radius: 15px;
+        background-color: rgb(208, 255, 0);
     }
     #line_img4{
-        width: 300px;
+        width: 200px;
         height: 300px;
-        border-radius: 50px;
-        background-color: aqua;
+        border-radius: 15px;
+        background-color: rgb(255, 0, 0);
     }
     #line_img5{
-        width: 300px;
-        height: 600px;
-        border-radius: 50px;
+        width: 260px;
+        height: 620px;
+        border-radius: 15px;
         background-color: aqua;
-    }
-    #instaa{
-        text-decoration: none;
+    }  
+    #insta {
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
     }
     #github{
         width: 70px;
         height: 70px;
-        border-radius: 50px;
+        border-radius: 90px;
     }
     #spotfy{
-        width: 120px;
+        width: 72px;
         height: 70px;
         border-radius: 50px;
+    }
+    #youtube{
+        width: 90px;
+        height: 70px;
+        border-radius: 20px;
+    }
+    #img1{
+        width: 300px;
+        height: 300px;
+        border-radius: 15px;
+    }
+    #img2{
+        width: 300px;
+        height: 300px;
+        border-radius: 15px;
+    }
+    #img3{
+        width: 200px;
+        height: 300px;
+        border-radius: 15px;
+    }
+    #img4{
+        width: 200px;
+        height: 300px;
+        border-radius: 15px;
+    }
+    #img5{
+        width: 260px;
+        height: 620px;
+        border-radius: 15px;
+    }
+    .info{
+        font-family: roboto;
+    }
+    #socials{
+        margin-right: 500px;
+        margin-bottom: 14px;
+    }
+    .ok{
+        text-decoration: none;
+        color: black;
     }
     </style>
 </head>
@@ -125,18 +165,18 @@
     <div id="TopBox">
         <div id="Circle"></div>
         <div>
-            <h1>Arthur Henryck Vieira</h1>
-            <h2>Aluno, 1º T.I., games, alto sax</h2>
+            <h1 class="info">Arthur Henryck Vieira</h1>
+            <h2 class="info">Aluno, 1º T.I., games, alto sax</h2>
         </div>
-        <h3>socials</h3>
+        <h3 class="info" id="socials">socials</h3>
         <div id="container">
-            <a href="https://www.instagram.com/arthur.henryck/" class="instaa">
+            <a href="https://www.instagram.com/arthur.henryck/" class="ok">
                 <div class="Botao Botao1" id="elemento">
                     <img src="../Documents/download.jpg" alt="Instagram" id="insta">
                         <p>INSTAGRAM</p>  
              </div>
             </a>
-            <a href="https://github.com/arthurhenryck">
+            <a href="https://github.com/arthurhenryck" class="ok">
             <div class="Botao Botao2" id="elemento">
                 <img src="../Documents/git.png" alt="github" id="github">
                     <p>GITHUB</p>
@@ -145,31 +185,49 @@
         </div>
         <br>
         <div id="container1">
-            <a href="https://open.spotify.com/user/31ghu2mobupatpwis24zmifuqvmy"></a>
+            <a href="https://open.spotify.com/user/31ghu2mobupatpwis24zmifuqvmy" class="ok">
             <div class="Botao Botao1" id="elemento">
-                <img src="../Documents/spotfy.png" alt="" id="spotfy">
-                <p>Botao 3</p>
+                <img src="../Documents/imgs/spotfy.png" alt="" id="spotfy">
+                <p>SPOTFY</p>
             </div>
+        </a>
+        <a href="https://youtube.com/@user-le5pu9nv2q?si=wCPBwqg-XkpSjMIf" class="ok">
             <div class="Botao Botao2" id="elemento">
-                <p>Botao 4</p>
+                <img src="../Documents/imgs/youtube.png" alt="youtube" id="youtube">
+                <p>YOUTUBE</p>
             </div>
+        </a>
         </div>
     </div>
     <div id="BottomBox">
         <div>
-            <div class="line_img" id="line_img1"></div>
+            <div class="line_img" id="line_img1">
+                <img src="https://idocode.com.br/wp-content/uploads/2021/07/programacao-scaled.jpg" alt="img1" id="img1">
+            </div>
             <br>
-            <div class="line_img" id="line_img2"></div>
+            <div class="line_img" id="line_img2">
+                <img src="../Documents/imgs/videogame.jpg" alt="img2" id="img2">
+            </div>
         </div>
         <br>
         <div>
-            <div class="line_img" id="line_img3"></div>
+            <div class="line_img" id="line_img3">
+                <img src="../Documents/imgs/sax alto.jpg" alt="img3" id="img3">
+            </div>
             <br>
-            <div class="line_img" id="line_img4"></div>
+            <div class="line_img" id="line_img4">
+                <img src="../Documents/imgs/setup.jpg" alt="img4" id="img4">
+            </div>
         </div>
         <div class="colun_img3" id="colun_img3">
-            <div class="line_img" id="line_img5"></div>
+            <div class="line_img" id="line_img5">
+                <img src="../Documents/imgs/arsenal.jpg" alt="img5" id="img5">
+            </div>
         </div>
     </div>
+    <br>
+    <br>
+    <br>
+    <br>
 </body>
 </html>
